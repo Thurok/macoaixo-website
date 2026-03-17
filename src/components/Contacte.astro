@@ -1,0 +1,91 @@
+<section class="section contacte" id="contacte">
+	<div class="container box">
+		<h2>Contacte</h2>
+		<p>Segueix-nos i escriu-nos per Instagram o TikTok per col·laboracions, dubtes o idees noves.</p>
+
+		<div class="socials">
+			<a
+				class="social-link"
+				href="https://www.instagram.com/macoaixo.cat/"
+				target="_blank"
+				rel="noreferrer"
+				aria-label="Instagram de MacoAixò"
+			>
+				<svg viewBox="0 0 24 24" aria-hidden="true">
+					<path
+						d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5a4.25 4.25 0 0 0-4.25-4.25h-8.5Zm8.8 1.3a1.15 1.15 0 1 1 0 2.3 1.15 1.15 0 0 1 0-2.3ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Z"
+					/>
+				</svg>
+				Instagram
+			</a>
+
+			<a
+				class="social-link"
+				href="https://www.tiktok.com/@macoaixo.cat"
+				target="_blank"
+				rel="noreferrer"
+				aria-label="TikTok de MacoAixò"
+			>
+				<svg viewBox="0 0 24 24" aria-hidden="true">
+					<path
+						d="M15.6 3c.25 2.05 1.5 3.55 3.4 4.06v2.3a7.08 7.08 0 0 1-3.34-1.04v6.7c0 3.38-2.7 6-6.2 6A6.11 6.11 0 0 1 3.4 15c0-3.3 2.65-6.02 6-6.02.38 0 .7.03 1.02.1v2.45c-.27-.08-.58-.12-.93-.12A3.62 3.62 0 0 0 5.84 15a3.7 3.7 0 0 0 3.67 3.63A3.68 3.68 0 0 0 13.2 15V3h2.4Z"
+					/>
+				</svg>
+				TikTok
+			</a>
+		</div>
+	</div>
+</section>
+
+<style>
+	.section {
+		padding: clamp(2.4rem, 6vw, 4.8rem) 0;
+	}
+
+	.box {
+		padding: clamp(1.3rem, 4vw, 2.2rem);
+		border-radius: 24px;
+		background: linear-gradient(150deg, #fff 0%, #fff7da 85%);
+		border: 1px solid color-mix(in oklab, var(--ink) 10%, white 90%);
+		box-shadow: var(--shadow-soft);
+	}
+
+	h2 {
+		font-size: clamp(1.7rem, 4vw, 2.5rem);
+		letter-spacing: -0.03em;
+		margin: 0;
+	}
+
+	p {
+		margin: 0.7rem 0 1.1rem;
+		color: var(--muted);
+	}
+
+	.socials {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.7rem;
+	}
+
+	.social-link {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.55rem;
+		text-decoration: none;
+		padding: 0.66rem 0.98rem;
+		border-radius: 999px;
+		background: #fff;
+		border: 1px solid color-mix(in oklab, var(--ink) 16%, white 84%);
+		font-weight: 600;
+	}
+
+	.social-link svg {
+		width: 18px;
+		height: 18px;
+		fill: var(--ink);
+	}
+
+	.social-link:hover {
+		border-color: var(--brand-red);
+	}
+</style>

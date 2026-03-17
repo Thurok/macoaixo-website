@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ca">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>MacoAixò | Adhesius Catalans</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	:root {
+		--brand-red: #da121a;
+		--brand-yellow: #fcdd09;
+		--ink: #121212;
+		--paper: #fffdf6;
+		--muted: #5a5a5a;
+		--card: #ffffff;
+		--shadow-soft: 0 18px 50px rgba(18, 18, 18, 0.14);
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		min-height: 100%;
+	}
+
+	body {
+		font-family: 'Work Sans', sans-serif;
+		color: var(--ink);
+		background: radial-gradient(circle at 10% 0%, #fff3cb 0%, #fffdf6 40%, #fff 100%);
+		line-height: 1.45;
+	}
+
+	a {
+		color: inherit;
+	}
+
+	.container {
+		width: min(1120px, calc(100% - 2rem));
+		margin: 0 auto;
+	}
+</style>

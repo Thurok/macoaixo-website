@@ -1,0 +1,98 @@
+<section class="section" id="per-que">
+	<div class="container">
+		<h2>Per què MacoAixò</h2>
+		<p class="section-intro">
+			MacoAixò neix d'una idea molt simple: fer objectes petits però memorables, amb una veu pròpia i
+			una estètica que connecta amb qui estima Catalunya o simplement aprecia el bon disseny amb humor.
+		</p>
+
+		<div class="features">
+			<article class="feature-card">
+				<div class="feature-icon">01</div>
+				<h3>Humor amb identitat</h3>
+				<p>Frases i conceptes que juguen amb la cultura catalana sense perdre elegància ni autenticitat.</p>
+			</article>
+
+			<article class="feature-card">
+				<div class="feature-icon">02</div>
+				<h3>Estètica càlida</h3>
+				<p>
+					Colors naturals, formes amables i un estil visual amb personalitat pròpia, ideal per destacar
+					sense cridar.
+				</p>
+			</article>
+
+			<article class="feature-card">
+				<div class="feature-icon">03</div>
+				<h3>Perfectes per regalar</h3>
+				<p>Un detall fàcil de portar, fàcil de compartir i molt fàcil d'explicar amb un somriure.</p>
+			</article>
+		</div>
+	</div>
+</section>
+
+<style>
+	.section {
+		padding: clamp(2.4rem, 6vw, 4.6rem) 0;
+	}
+
+	h2 {
+		font-size: clamp(1.7rem, 4.5vw, 2.7rem);
+		line-height: 1.1;
+		letter-spacing: -0.03em;
+		margin: 0;
+	}
+
+	.section-intro {
+		max-width: 68ch;
+		margin: 0.8rem 0 1.4rem;
+		color: var(--muted);
+	}
+
+	.features {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 1rem;
+	}
+
+	.feature-card {
+		padding: 1.2rem;
+		border-radius: 18px;
+		background: var(--card);
+		border: 1px solid color-mix(in oklab, var(--ink) 10%, white 90%);
+		box-shadow: var(--shadow-soft);
+	}
+
+	.feature-icon {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 40px;
+		height: 40px;
+		border-radius: 999px;
+		font-weight: 700;
+		font-size: 0.86rem;
+		background: var(--brand-yellow);
+	}
+
+	.feature-card h3 {
+		margin: 0.8rem 0 0.45rem;
+	}
+
+	.feature-card p {
+		margin: 0;
+		color: var(--muted);
+	}
+
+	@media (max-width: 980px) {
+		.features {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	@media (max-width: 720px) {
+		.features {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

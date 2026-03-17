@@ -1,0 +1,129 @@
+<header class="site-header">
+	<div class="container toolbar">
+		<a class="brand" href="#inici" aria-label="MacoAixò inici">
+			<img src="/logo.png" alt="Logotip de MacoAixò" loading="eager" />
+		</a>
+
+		<nav class="actions" aria-label="Xarxes i compra">
+			<a
+				class="icon-button"
+				href="https://www.instagram.com/macoaixo.cat/"
+				target="_blank"
+				rel="noreferrer"
+				aria-label="Instagram de MacoAixò"
+			>
+				<svg viewBox="0 0 24 24" aria-hidden="true">
+					<path
+						d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5a4.25 4.25 0 0 0-4.25-4.25h-8.5Zm8.8 1.3a1.15 1.15 0 1 1 0 2.3 1.15 1.15 0 0 1 0-2.3ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Z"
+					/>
+				</svg>
+			</a>
+
+			<a
+				class="icon-button"
+				href="https://www.tiktok.com/@macoaixo.cat"
+				target="_blank"
+				rel="noreferrer"
+				aria-label="TikTok de MacoAixò"
+			>
+				<svg viewBox="0 0 24 24" aria-hidden="true">
+					<path
+						d="M15.6 3c.25 2.05 1.5 3.55 3.4 4.06v2.3a7.08 7.08 0 0 1-3.34-1.04v6.7c0 3.38-2.7 6-6.2 6A6.11 6.11 0 0 1 3.4 15c0-3.3 2.65-6.02 6-6.02.38 0 .7.03 1.02.1v2.45c-.27-.08-.58-.12-.93-.12A3.62 3.62 0 0 0 5.84 15a3.7 3.7 0 0 0 3.67 3.63A3.68 3.68 0 0 0 13.2 15V3h2.4Z"
+					/>
+				</svg>
+			</a>
+
+			<a class="buy-button" href="https://ko-fi.com/macoaixo" target="_blank" rel="noreferrer">
+				Comprar
+			</a>
+		</nav>
+	</div>
+</header>
+
+<style>
+	.site-header {
+		position: sticky;
+		top: 0;
+		z-index: 20;
+		backdrop-filter: blur(8px);
+		background: color-mix(in oklab, white 80%, var(--brand-yellow) 20%);
+		border-bottom: 1px solid color-mix(in oklab, var(--ink) 15%, white 85%);
+	}
+
+	.toolbar {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0.75rem 0;
+		gap: 1rem;
+	}
+
+	.brand {
+		display: inline-flex;
+		align-items: center;
+	}
+
+	.brand img {
+		height: 46px;
+		width: auto;
+		object-fit: contain;
+	}
+
+	.actions {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.6rem;
+	}
+
+	.icon-button {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 42px;
+		height: 42px;
+		border-radius: 999px;
+		border: 1px solid color-mix(in oklab, var(--ink) 15%, white 85%);
+		background: #fff;
+		transition: transform 200ms ease, border-color 200ms ease;
+	}
+
+	.icon-button svg {
+		width: 21px;
+		height: 21px;
+		fill: var(--ink);
+	}
+
+	.icon-button:hover {
+		transform: translateY(-1px);
+		border-color: var(--brand-red);
+	}
+
+	.buy-button {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0.65rem 1.15rem;
+		border-radius: 999px;
+		background: var(--brand-red);
+		color: white;
+		text-decoration: none;
+		font-weight: 700;
+		letter-spacing: 0.01em;
+		transition: transform 200ms ease, box-shadow 200ms ease;
+	}
+
+	.buy-button:hover {
+		transform: translateY(-1px);
+		box-shadow: 0 10px 20px rgba(218, 18, 26, 0.25);
+	}
+
+	@media (max-width: 720px) {
+		.brand img {
+			height: 38px;
+		}
+
+		.buy-button {
+			padding: 0.58rem 0.98rem;
+		}
+	}
+</style>

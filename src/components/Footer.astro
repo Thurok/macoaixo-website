@@ -1,0 +1,54 @@
+<footer class="site-footer">
+	<div class="container footer-content">
+		<p>MacoAixò © 2026</p>
+		<nav aria-label="Enllaços del peu de pàgina">
+			<a href="https://www.instagram.com/macoaixo.cat/" target="_blank" rel="noreferrer">Instagram</a>
+			<a href="https://www.tiktok.com/@macoaixo.cat" target="_blank" rel="noreferrer">TikTok</a>
+			<a href="#">Política de privacitat</a>
+		</nav>
+	</div>
+</footer>
+
+<style>
+	.site-footer {
+		margin-top: 2rem;
+		padding: 1.2rem 0 1.8rem;
+		border-top: 1px solid color-mix(in oklab, var(--ink) 12%, white 88%);
+	}
+
+	.footer-content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1rem;
+	}
+
+	p {
+		margin: 0;
+		font-weight: 600;
+	}
+
+	nav {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.8rem;
+		flex-wrap: wrap;
+	}
+
+	a {
+		text-decoration: none;
+		color: var(--muted);
+		font-weight: 600;
+	}
+
+	a:hover {
+		color: var(--brand-red);
+	}
+
+	@media (max-width: 720px) {
+		.footer-content {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+</style>
