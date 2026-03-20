@@ -1,7 +1,7 @@
 <header class="site-header">
 	<div class="container toolbar">
 		<a class="brand" href="#inici" aria-label="MacoAixò inici">
-			<img src="/logo.png" alt="Logotip de MacoAixò" loading="eager" />
+			Maco, això
 		</a>
 
 		<nav class="actions" aria-label="Xarxes i compra">
@@ -61,12 +61,12 @@
 	.brand {
 		display: inline-flex;
 		align-items: center;
-	}
-
-	.brand img {
-		height: 46px;
-		width: auto;
-		object-fit: contain;
+		height: 42px;
+		font-size: clamp(1.2rem, 1.8vw, 1.45rem);
+		font-weight: 700;
+		letter-spacing: -0.02em;
+		text-decoration: none;
+		line-height: 1;
 	}
 
 	.actions {
@@ -118,8 +118,9 @@
 	}
 
 	@media (max-width: 720px) {
-		.brand img {
+		.brand {
 			height: 38px;
+			font-size: 1.1rem;
 		}
 
 		.buy-button {
