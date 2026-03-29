@@ -2,7 +2,7 @@
 import IconInstagram from './icons/IconInstagram.astro';
 import IconTikTok from './icons/IconTikTok.astro';
 import IconMail from './icons/IconMail.astro';
-import { CONTACT_EMAIL } from '../config';
+import { CONTACT_EMAIL, KO_FI_LINK } from '../config';
 ---
 
 <header class="site-header">
@@ -40,8 +40,8 @@ import { CONTACT_EMAIL } from '../config';
 				<IconMail />
 			</a>
 
-			<a class="buy-button" href="https://ko-fi.com/macoaixo" target="_blank" rel="noreferrer">
-				Botiga
+			<a class="buy-button" href={KO_FI_LINK} target="_blank" rel="noreferrer">
+			 Botiga
 			</a>
 		</nav>
 	</div>
