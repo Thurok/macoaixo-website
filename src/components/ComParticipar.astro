@@ -1,31 +1,41 @@
 <section class="section" id="per-que">
 	<div class="container">
 		<h2>Porta Catalunya allà on vagis.</h2>
-		<p class="section-intro">
+		<h3 class="section-intro">
 			Com participar:
-		</p>
+		</h3>
 
 		<div class="features">
 			<article class="feature-card">
 				<div class="feature-icon">1</div>
-				<h3>Sol·licita adhesius</h3>
-				<p>Recopila els teus adhesius per al teu proper viatge. Compra'ls <a href="https://ko-fi.com/macoaixo" target="_blank" rel="noreferrer">aquí</a> o envian's un missatge!<br>
-				No oblidis posar-los a la maleta!</p>
+				<h3>Aconsegueix adhesius</h3>
+				<p>
+					No et quedis sense adhesius pel teu pròxim viatge! Compra'ls 
+						<a href="https://ko-fi.com/macoaixo" class="red-link" target="_blank" rel="noreferrer">aquí</a>
+					o envia'ns un missatge.
+					<br><br>
+					I no t'oblidis de posar-los a la maleta!
+				</p>
 			</article>
 
 			<article class="feature-card">
 				<div class="feature-icon">2</div>
 				<h3>Col·loca adhesius a l'estranger</h3>
 				<p>
-					Troba un lloc pintoresc, posa-hi el teu adhesiu (allà on estigui permès sense fer res malbé).<br>Sigues creatiu i respectuós amb l'entorn, la meitat de la diversió és trobar el lloc ideal!
+					Troba un lloc pintoresc, posa-hi el teu adhesiu (allà on estigui permès sense fer res malbé).
+					<br><br>
+					Sigues creatiu i respectuós amb l'entorn, la meitat de la diversió és trobar el lloc ideal!
 				</p>
 			</article>
 
 			<article class="feature-card">
 				<div class="feature-icon">3</div>
 				<h3>Grava un vídeo</h3>
-				<p>Comença amb un primer pla de l'adhesiu i després enfoc a les vistes. Envia'ns el teu vídeo per xarxes socials o per correu electrònic i el compartirem al nostre perfil.<br>
-				Fes també un post i etiqueta'ns!</p>
+				<p>
+					Comença amb un primer pla de l'adhesiu i després enfoca a les vistes. Envia'ns el teu vídeo per xarxes socials o per correu electrònic i el compartirem al nostre perfil.
+					<br><br>
+					Fes també un post i etiqueta'ns!
+				</p>
 			</article>
 		</div>
 	</div>
@@ -47,6 +57,8 @@
 		max-width: 68ch;
 		margin: 0.8rem 0 1.4rem;
 		color: var(--muted);
+		font-size: clamp(1.3rem, 3vw, 1.7rem);
+		font-weight: 600;
 	}
 
 	.features {
@@ -94,5 +106,15 @@
 		.features {
 			grid-template-columns: 1fr;
 		}
+	}
+
+	.red-link {
+		color: var(--brand-red, #e53935);
+		text-decoration: underline;
+		font-weight: 500;
+		transition: color 0.2s;
+	}
+	.red-link:hover {
+		color: color-mix(in oklab, var(--brand-red, #e53935) 80%, black 20%);
 	}
 </style>
